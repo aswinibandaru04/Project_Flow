@@ -1,0 +1,50 @@
+.notification-container{
+    position:relative;
+}
+
+.bell{
+    position:relative;
+    cursor:pointer;
+    font-size:22px;
+}
+
+.badge{
+    position:absolute;
+    top:-8px;
+    right:-8px;
+    background:red;
+    color:white;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:11px;
+}
+
+.notification-dropdown{
+    position:absolute;
+    right:0;
+    top:40px;
+    width:320px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    padding:15px;
+    z-index:1000;
+}
+
+.notification-item{
+    padding:12px;
+    border-bottom:1px solid #eee;
+    cursor:pointer;
+}
+
+.notification-item:hover{
+    background:#f8fafc;
+}
+
+.notification-item.read{
+    opacity:.6;
+}

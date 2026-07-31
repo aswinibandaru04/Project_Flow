@@ -1,0 +1,62 @@
+.invite-container{
+    padding:30px;
+}
+
+.search-box{
+    width:100%;
+    padding:12px;
+    margin:20px 0;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.user-card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+    margin-bottom:12px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.invite-btn{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:8px 16px;
+    border-radius:6px;
+    cursor:pointer;
+    width:90px;
+    height:38px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.invite-container{
+    padding:30px;
+    margin-top:20px;
+}
+
+.invite-btn:hover{
+    background:#1d4ed8;
+}
+
+.workspace-select {
+  margin-bottom: 20px;
+}
+
+.workspace-select label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.workspace-select select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}

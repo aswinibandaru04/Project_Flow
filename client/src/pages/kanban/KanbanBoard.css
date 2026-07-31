@@ -1,0 +1,89 @@
+.board-container {
+    display: flex;
+    min-height: 100vh;
+    background: #f5f7fb;
+}
+
+.board-content{
+    margin-left:280px;
+    width:calc(100% - 280px);
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+
+.board-body {
+    padding: 100px 30px 30px;
+}
+
+.board-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    margin-left: 20px;
+}
+
+.board-header h2 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.selectors {
+    display: flex;
+    gap: 15px;
+}
+
+.selectors select {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    min-width: 220px;
+    background: white;
+}
+
+/* ===== Kanban Columns ===== */
+
+.kanban-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 100%;
+}
+
+.column {
+    background: #ffffff;
+    border-radius: 15px;
+    min-height: 600px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.column-header {
+    padding: 18px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.todo {
+    background: #2563eb;
+}
+
+.progress {
+    background: #f59e0b;
+}
+
+.done {
+    background: #16a34a;
+}
+
+.task-card {
+    background: white;
+    margin: 15px;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}

@@ -1,0 +1,68 @@
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+.dashboard-content {
+  margin-left: 280px;
+  width: calc(100% - 280px);
+  min-height: 100vh;
+}
+
+.dashboard-body {
+  padding: 30px;
+}
+
+.dashboard-content {
+  flex: 1;
+  margin-left: 280px;
+}
+
+.dashboard-body {
+  padding: 100px 30px 30px;
+}
+
+.dashboard-body h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 45px;
+}
+
+/* Statistics Cards */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-left: 6px solid #2563eb;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 28px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #6b7280;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.card p {
+  font-size: 42px;
+  font-weight: 700;
+  color: #2563eb;
+  margin: 0;
+}

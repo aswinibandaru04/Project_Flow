@@ -1,0 +1,127 @@
+.member-sidebar{
+
+    position:fixed;
+    left:0;
+    top:0;
+
+    width:280px;
+    height:100vh;
+
+    background:#111827;
+
+    transition:.35s;
+
+    overflow:hidden;
+
+    z-index:1000;
+}
+
+.member-sidebar.collapsed{
+
+    width:80px;
+
+}
+
+.menu-btn{
+
+    background:none;
+    border:none;
+
+    color:white;
+
+    font-size:26px;
+
+    padding:20px;
+
+    cursor:pointer;
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:15px 20px;
+
+    color:white;
+
+    font-size:30px;
+
+    font-weight:bold;
+}
+
+.logo-icon{
+
+    width:45px;
+    height:45px;
+
+    background:#2563eb;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:10px;
+
+    color:white;
+
+    font-weight:bold;
+}
+
+.member-sidebar ul{
+
+    margin-top:30px;
+
+    list-style:none;
+
+    padding:0;
+}
+
+.member-sidebar li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    color:#d1d5db;
+
+    padding:18px 22px;
+
+    margin:8px;
+
+    border-radius:12px;
+
+    transition:.3s;
+}
+
+.member-sidebar li:hover{
+
+    background:#2563eb;
+
+    color:white;
+}
+
+.nav-link{
+
+    text-decoration:none;
+}
+
+.nav-link.active li{
+
+    background:#2563eb;
+
+    color:white;
+}
+
+.logout{
+
+    margin-top:30px;
+}
+

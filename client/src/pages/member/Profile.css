@@ -1,0 +1,118 @@
+.profile-page{
+    display:flex;
+    background:#f4f6f9;
+    min-height:100vh;
+}
+
+.profile-main{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+.profile-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.profile-card{
+    width:500px;
+    background:#fff;
+    border-radius:15px;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.profile-avatar{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    background:#2563eb;
+    color:#fff;
+    font-size:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto 20px;
+}
+
+.profile-card h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#222;
+}
+
+.profile-group{
+    margin-bottom:18px;
+}
+
+.profile-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+    color:#555;
+}
+
+.profile-group input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+    outline:none;
+}
+
+.profile-group input:focus{
+    border-color:#2563eb;
+}
+
+.profile-value{
+    padding: 4px 0;
+    font-size:16px;
+    color:#222;
+    font-weight:500;
+    border:none;
+    background:transparent;
+}
+
+.profile-value{
+    padding:10px 0;
+    font-size:16px;
+    color:#222;
+    border-bottom:1px solid #e5e7eb;
+    background:transparent;
+}
+
+.edit-btn,
+.save-btn,
+.cancel-btn{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+.edit-btn{
+    background:#2563eb;
+    color:#fff;
+}
+
+.save-btn{
+    background:#16a34a;
+    color:#fff;
+}
+
+.cancel-btn{
+    background:#ef4444;
+    color:#fff;
+}
+
+.profile-buttons{
+    display:flex;
+    gap:10px;
+}

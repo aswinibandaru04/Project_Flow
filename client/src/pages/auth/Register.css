@@ -1,0 +1,848 @@
+/* ===========================
+   Google Font
+=========================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background:#0f172a;
+}
+
+/* ===========================
+   Main Container
+=========================== */
+
+.register-page{
+    display:flex;
+    min-height:100vh;
+    overflow:hidden;
+}
+
+/* ===========================
+   LEFT SECTION
+=========================== */
+
+.register-left{
+    flex:1;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding:60px;
+    color:#fff;
+
+    background:
+    radial-gradient(circle at top left,#8b5cf6 0%,transparent 40%),
+    radial-gradient(circle at bottom right,#fb7185 0%,transparent 40%),
+    linear-gradient(135deg,#18122b,#251b37,#372948);
+
+    overflow:hidden;
+}
+
+/* Animated Glow */
+
+.register-left::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    background:#f97316;
+
+    opacity:.18;
+
+    filter:blur(120px);
+
+    top:-150px;
+    left:-120px;
+
+    border-radius:50%;
+
+    animation:floatGlow 7s infinite alternate;
+
+}
+
+.register-left::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:400px;
+    height:400px;
+
+    background:#ec4899;
+
+    opacity:.18;
+
+    filter:blur(100px);
+
+    bottom:-120px;
+    right:-100px;
+
+    border-radius:50%;
+
+    animation:floatGlow2 8s infinite alternate;
+
+}
+
+/* ===========================
+   Brand
+=========================== */
+
+.brand{
+    position:relative;
+    z-index:2;
+}
+
+.brand h1{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+.tagline{
+
+    margin-top:10px;
+
+    color:#ddd;
+
+    font-size:15px;
+
+}
+
+/* ===========================
+   Hero
+=========================== */
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.hero-content h2{
+
+    font-size:52px;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+}
+
+.quote{
+
+    max-width:520px;
+
+    color:#ddd;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+}
+
+/* ===========================
+   Feature Cards
+=========================== */
+
+.feature-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    position:relative;
+
+    z-index:2;
+
+    margin-top:40px;
+
+}
+
+.feature-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:18px 22px;
+
+    border-radius:18px;
+
+    backdrop-filter:blur(16px);
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    transition:.35s;
+
+}
+
+.feature-card:hover{
+
+    transform:translateX(8px);
+
+    background:rgba(255,255,255,.12);
+
+}
+
+.feature-icon{
+
+    width:50px;
+    height:50px;
+
+    border-radius:14px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:12px;
+
+    background:linear-gradient(135deg,#f97316,#ec4899);
+
+    color:#fff;
+
+    font-size:22px;
+
+    flex-shrink:0;
+
+}
+
+.feature-card h4{
+
+    font-size:16px;
+
+    margin-bottom:4px;
+
+}
+
+.feature-card p{
+
+    color:#ddd;
+
+    font-size:14px;
+
+    line-height:1.6;
+
+}
+
+/* ===========================
+   Journey Box
+=========================== */
+
+.journey-box{
+    margin-top:40px;
+    position:relative;
+    z-index:2;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(15px);
+}
+
+.journey-box h3{
+    margin-bottom:20px;
+    font-size:22px;
+}
+
+.flow{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.flow div{
+    background:rgba(255,255,255,.15);
+    padding:12px 18px;
+    border-radius:12px;
+    font-size:14px;
+    font-weight:500;
+}
+
+.flow svg{
+    color:#fbbf24;
+    font-size:20px;
+}
+
+/* ===========================
+   RIGHT SECTION
+=========================== */
+
+.register-right{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f8fafc;
+    padding:40px;
+}
+
+.register-card{
+    width:100%;
+    max-width:470px;
+
+    background:#fff;
+
+    padding:45px;
+
+    border-radius:24px;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.12);
+}
+
+.register-header{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.register-header h2{
+    font-size:32px;
+    color:#1e293b;
+    margin-bottom:10px;
+}
+
+.register-header p{
+    color:#64748b;
+    font-size:15px;
+}
+
+/* ===========================
+   Form
+=========================== */
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.input-group{
+    position: relative;
+}
+
+.input-group select{
+    width:100%;
+    padding:16px 18px 16px 50px;
+    border:1px solid #dbe4ee;
+    border-radius:14px;
+    outline:none;
+    font-size:15px;
+    transition:.3s;
+    background:#fff;
+    color:#333;
+    appearance:none;
+    cursor:pointer;
+}
+
+.input-group select:focus{
+    border-color:#8b5cf6;
+    box-shadow:0 0 0 4px rgba(139,92,246,.15);
+}
+
+.select-arrow{
+    position:absolute;
+    top:50%;
+    right:18px;
+    transform:translateY(-50%);
+    color:#64748b;
+    pointer-events:none;
+    font-size:14px;
+}
+
+.input-icon{
+    position:absolute;
+    top:50%;
+    left:18px;
+    transform:translateY(-50%);
+    color:#64748b;
+    font-size:18px;
+}
+
+.input-group input{
+    width:100%;
+
+    padding:16px 18px 16px 50px;
+
+    border:1px solid #dbe4ee;
+
+    border-radius:14px;
+
+    outline:none;
+
+    font-size:15px;
+
+    transition:.3s;
+}
+
+.input-group input:focus{
+
+    border-color:#8b5cf6;
+
+    box-shadow:
+    0 0 0 4px rgba(139,92,246,.15);
+
+}
+
+/* ===========================
+   Button
+=========================== */
+
+form button{
+
+    margin-top:10px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    background:
+    linear-gradient(
+    135deg,
+    #8b5cf6,
+    #ec4899,
+    #f97316);
+
+    transition:.35s;
+}
+
+form button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 15px 35px rgba(236,72,153,.35);
+
+}
+
+/* ===========================
+   Divider
+=========================== */
+
+.divider{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:28px 0;
+
+    color:#94a3b8;
+
+    position:relative;
+
+}
+
+.divider::before,
+.divider::after{
+
+    content:"";
+
+    flex:1;
+
+    height:1px;
+
+    background:#e2e8f0;
+
+}
+
+.divider span{
+
+    margin:0 18px;
+
+    font-size:14px;
+
+}
+
+/* ===========================
+   Bottom Links
+=========================== */
+
+.bottom-links{
+
+    text-align:center;
+
+}
+
+.bottom-links p{
+
+    color:#64748b;
+
+}
+
+.bottom-links a{
+
+    color:#8b5cf6;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.bottom-links a:hover{
+
+    color:#ec4899;
+
+}
+
+/* ===========================
+   Floating Animations
+=========================== */
+
+@keyframes floatGlow{
+
+    from{
+        transform:translate(0px,0px) scale(1);
+    }
+
+    to{
+        transform:translate(40px,30px) scale(1.2);
+    }
+
+}
+
+@keyframes floatGlow2{
+
+    from{
+        transform:translate(0px,0px) scale(1);
+    }
+
+    to{
+        transform:translate(-30px,-40px) scale(1.15);
+    }
+
+}
+
+/* ===========================
+   Card Animation
+=========================== */
+
+.register-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================
+   Hero Animation
+=========================== */
+
+.hero-content{
+
+    animation:slideLeft .8s ease;
+
+}
+
+@keyframes slideLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/* ===========================
+   Brand Animation
+=========================== */
+
+.brand{
+
+    animation:fadeBrand .8s ease;
+
+}
+
+@keyframes fadeBrand{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================
+   Responsive (Tablet)
+=========================== */
+
+@media(max-width:1024px){
+
+.register-page{
+
+    flex-direction:column;
+
+}
+
+.register-left{
+
+    padding:40px;
+
+}
+
+.register-right{
+
+    padding:40px 20px;
+
+}
+
+.register-card{
+
+    max-width:650px;
+
+}
+
+.hero-content h2{
+
+    font-size:42px;
+
+}
+
+.flow{
+
+    justify-content:center;
+
+}
+
+}
+
+/* ===========================
+   Responsive (Mobile)
+=========================== */
+
+@media(max-width:768px){
+
+.register-left{
+
+    padding:30px;
+
+}
+
+.brand h1{
+
+    font-size:34px;
+
+}
+
+.hero-content h2{
+
+    font-size:34px;
+
+}
+
+.quote{
+
+    font-size:14px;
+
+}
+
+.feature-card{
+
+    padding:16px;
+
+}
+
+.feature-icon{
+
+    width:44px;
+    height:44px;
+
+    font-size:18px;
+
+}
+
+.register-right{
+
+    padding:20px;
+
+}
+
+.register-card{
+
+    padding:30px;
+
+    border-radius:20px;
+
+}
+
+.register-header h2{
+
+    font-size:28px;
+
+}
+
+.input-group input{
+
+    padding:14px 16px 14px 48px;
+
+}
+
+form button{
+
+    padding:14px;
+
+}
+
+.flow{
+
+    flex-direction:column;
+
+}
+
+.flow svg{
+
+    transform:rotate(90deg);
+
+}
+
+}
+
+/* ===========================
+   Small Mobile
+=========================== */
+
+@media(max-width:480px){
+
+.register-left{
+
+    padding:24px;
+
+}
+
+.hero-content h2{
+
+    font-size:28px;
+
+}
+
+.brand h1{
+
+    font-size:30px;
+
+}
+
+.register-card{
+
+    padding:24px;
+
+}
+
+.register-header h2{
+
+    font-size:24px;
+
+}
+
+.tagline{
+
+    font-size:13px;
+
+}
+
+.quote{
+
+    font-size:13px;
+
+}
+
+.feature-card h4{
+
+    font-size:15px;
+
+}
+
+.feature-card p{
+
+    font-size:13px;
+
+}
+
+}
