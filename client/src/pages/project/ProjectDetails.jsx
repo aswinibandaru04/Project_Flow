@@ -55,9 +55,7 @@ const [showAssignModal, setShowAssignModal] = useState(false);
     }
   };
 
-  // ==========================
-  // Fetch Tasks
-  // ==========================
+ 
 
   const fetchTasks = async () => {
     try {
@@ -92,9 +90,7 @@ const [showAssignModal, setShowAssignModal] = useState(false);
      fetchUsers();
   }, []);
 
-  // ==========================
-  // Handle Input
-  // ==========================
+
 
   const handleChange = (e) => {
     setFormData({
@@ -103,9 +99,6 @@ const [showAssignModal, setShowAssignModal] = useState(false);
     });
   };
 
-  // ==========================
-  // Create Task
-  // ==========================
 
   const handleCreateTask = async () => {
     try {

@@ -1,8 +1,6 @@
 const User = require("../models/user");
 
-// ===========================
-// GET ALL USERS
-// ===========================
+
 
 const getUsers = async (req, res) => {
   try {
@@ -24,9 +22,7 @@ const getUsers = async (req, res) => {
   }
 };
 
-// ===============================
-// GET PROFILE
-// ===============================
+
 const getProfile = async (req, res) => {
   try {
     const user = await User.findById(req.user.id).select("-password");
@@ -46,9 +42,7 @@ const getProfile = async (req, res) => {
   }
 };
 
-// ===============================
-// UPDATE PROFILE
-// ===============================
+
 const updateProfile = async (req, res) => {
   try {
     const { name, email, skills } = req.body;

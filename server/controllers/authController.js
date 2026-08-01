@@ -3,9 +3,6 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 
-// ======================
-// REGISTER USER
-// ======================
 const registerUser = async (req, res) => {
 
     try {
@@ -68,9 +65,7 @@ if (!name || !email || !password) {
 
 
 
-// ======================
-// LOGIN USER
-// ======================
+
 
 const loginUser = async (req, res) => {
 

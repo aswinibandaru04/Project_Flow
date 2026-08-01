@@ -1,9 +1,7 @@
 const Project = require("../models/project");
 const Workspace = require("../models/workspace");
 
-// ======================
-// CREATE PROJECT
-// ======================
+
 
 const createProject = async (req, res) => {
 
@@ -59,9 +57,7 @@ const createProject = async (req, res) => {
 
 };
 
-// ======================
-// GET ALL PROJECTS OF A WORKSPACE
-// ======================
+
 
 const getProjects = async (req, res) => {
 
@@ -97,9 +93,7 @@ const getProjects = async (req, res) => {
 
 };
 
-// ======================
-// GET SINGLE PROJECT
-// ======================
+
 
 const getProjectById = async (req, res) => {
 
@@ -132,9 +126,7 @@ const getProjectById = async (req, res) => {
 
 };
 
-// ======================
-// UPDATE PROJECT
-// ======================
+
 
 const updateProject = async (req, res) => {
     try {
@@ -172,9 +164,7 @@ const updateProject = async (req, res) => {
     }
 };
 
-// ======================
-// DELETE PROJECT
-// ======================
+
 
 const deleteProject = async (req, res) => {
 

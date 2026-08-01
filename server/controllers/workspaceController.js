@@ -1,8 +1,6 @@
 const Workspace = require("../models/workspace");
 
-// ===============================
-// CREATE WORKSPACE
-// ===============================
+
 
 const createWorkspace = async (req, res) => {
 
@@ -60,9 +58,7 @@ console.log("User:", req.user);
 
 };
 
-// ===============================
-// GET ALL WORKSPACES
-// ===============================
+
 
 const getAllWorkspaces = async (req, res) => {
 
@@ -98,9 +94,7 @@ const getAllWorkspaces = async (req, res) => {
 
 };
 
-// ===============================
-// GET WORKSPACE BY ID
-// ===============================
+
 
 const getWorkspaceById = async (req, res) => {
 
@@ -136,9 +130,7 @@ const getWorkspaceById = async (req, res) => {
 
 };
 
-// ===============================
-// UPDATE WORKSPACE
-// ===============================
+
 
 const updateWorkspace = async (req, res) => {
 
@@ -188,9 +180,7 @@ const updateWorkspace = async (req, res) => {
 
 };
 
-// ===============================
-// DELETE WORKSPACE
-// ===============================
+
 
 const deleteWorkspace = async (req, res) => {
 
@@ -236,9 +226,7 @@ const deleteWorkspace = async (req, res) => {
 
 };
 
-// ===============================
-// INVITE MEMBER
-// ===============================
+
 const inviteMember = async (req, res) => {
   try {
     const { id } = req.params;      // Workspace ID

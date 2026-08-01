@@ -2,9 +2,7 @@ import axios from "axios";
 
 const API_URL = "https://project-flow-backend-fsex.onrender.com/api/notifications";
 
-// ==============================
-// GET NOTIFICATIONS
-// ==============================
+
 export const getNotifications = async (token) => {
   const res = await axios.get(API_URL, {
     headers: {
@@ -15,9 +13,7 @@ export const getNotifications = async (token) => {
   return res.data;
 };
 
-// ==============================
-// MARK AS READ
-// ==============================
+
 export const markNotificationRead = async (id, token) => {
   const res = await axios.patch(
     `${API_URL}/${id}/read`,
