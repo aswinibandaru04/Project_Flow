@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://project-flow-backend-fsex.onrender.com/notifications";
+const API_URL = "https://project-flow-backend-fsex.onrender.com/api/notifications";
 
 // ==============================
 // GET NOTIFICATIONS
