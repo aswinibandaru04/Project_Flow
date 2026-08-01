@@ -1,5 +1,5 @@
 const Project = require("../models/Project");
-const Workspace = require("../models/Workspace");
+const Workspace = require("../models/workspace");
 
 // ======================
 // CREATE PROJECT
