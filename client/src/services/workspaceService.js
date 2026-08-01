@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/workspaces";
+const API_URL = "https://project-flow-backend-fsex.onrender.com/api/workspaces";
 
 export const createWorkspace = async (workspaceData, token) => {
 

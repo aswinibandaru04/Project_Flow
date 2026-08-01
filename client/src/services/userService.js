@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/users";
+const API_URL = "https://project-flow-backend-fsex.onrender.com/api/users";
 
 // ==============================
 // GET ALL USERS

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/tasks";
+const API_URL = "https://project-flow-backend-fsex.onrender.com/tasks";
 
 export const createTask = async (taskData, token) => {
   const response = await axios.post(
@@ -31,7 +31,7 @@ export const getTasks = async (projectId, token) => {
 
 export const assignTask = async (taskId, userId, token) => {
   const response = await axios.put(
-    `http://localhost:5000/api/tasks/${taskId}/assign`,
+    `https://project-flow-backend-fsex.onrender.com/api/tasks/${taskId}/assign`,
     {
       assignedTo: userId,
     },
@@ -48,7 +48,7 @@ export const assignTask = async (taskId, userId, token) => {
 export const getMyTasks = async (token) => {
 
   const response = await axios.get(
-    "http://localhost:5000/api/tasks/my-tasks",
+    "https://project-flow-backend-fsex.onrender.com/api/tasks/my-tasks",
     {
       headers: {
         Authorization: `Bearer ${token}`,
@@ -66,7 +66,7 @@ export const changeTaskStatus = async (
 ) => {
 
   const response = await axios.patch(
-    `http://localhost:5000/api/tasks/${taskId}/status`,
+    `https://project-flow-backend-fsex.onrender.com/api/tasks/${taskId}/status`,
     {
       status,
     },
@@ -82,7 +82,7 @@ export const changeTaskStatus = async (
 
 export const getMemberDashboardStats = async (token) => {
   const res = await axios.get(
-    "http://localhost:5000/api/tasks/member-dashboard",
+    "https://project-flow-backend-fsex.onrender.com/api/tasks/member-dashboard",
     {
       headers: {
         Authorization: `Bearer ${token}`,

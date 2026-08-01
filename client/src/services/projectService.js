@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/projects";
+const API_URL = "https://project-flow-backend-fsex.onrender.com/project";
 
 export const createProject = async (projectData, token) => {
   const response = await axios.post(
