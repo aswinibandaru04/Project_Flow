@@ -13,11 +13,12 @@ import {
 } from "react-icons/fi";
 
 import { registerUser } from "../../services/authService";
-
+import { useAuth } from "../../context/AuthContext";
 import "./Register.css";
 
 function Register() {
   const navigate = useNavigate();
+  const { login } = useAuth();
 
   const [formData, setFormData] = useState({
   name: "",
@@ -50,16 +51,30 @@ function Register() {
     try {
       setLoading(true);
 
-      await registerUser({
-        name: formData.name,
-        email: formData.email,
-        role: formData.role,
-        password: formData.password,
-      });
+      const response = await registerUser({
+  name: formData.name,
+  email: formData.email,
+  role: formData.role,
+  password: formData.password,
+});
 
-      alert("Registration Successful!");
+const { user, token } = response;
 
-      navigate("/");
+// Store login information
+login(user, token);
+
+alert("Registration Successful!");
+
+// Redirect according to role
+if (user.role === "Admin") {
+  navigate("/admin");
+} else if (user.role === "Member") {
+  navigate("/member-dashboard");
+} else if (user.role === "Manager") {
+  navigate("/manager");
+} else {
+  navigate("/member-dashboard");
+}
     } catch (err) {
   console.log("===== REGISTER ERROR =====");
   console.log(err);

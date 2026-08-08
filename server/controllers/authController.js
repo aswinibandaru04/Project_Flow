@@ -42,9 +42,22 @@ if (!name || !email || !password) {
 
         });
 
+        // Generate JWT immediately after registration
+        const token = jwt.sign(
+        {
+            id: user._id,
+        },
+        process.env.JWT_SECRET,
+        {
+            expiresIn: "7d",
+        }
+    );
+
+
         res.status(201).json({
 
             message: "User Registered Successfully",
+            token,
             user
 
         });
