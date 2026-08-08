@@ -13,10 +13,10 @@ const { protect } = require("../middleware/authMiddleware");
 router.get("/profile", protect, getProfile);
 router.put("/profile", protect, updateProfile);
 
-// Get all users
-router.get("/", protect, getUsers);
+
 
 // Optional: users of a workspace
 router.get("/:workspaceId", protect, getUsers);
+router.get("/", protect, getUsers);
 
 module.exports = router;
